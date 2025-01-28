@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    padding: calc(var(--height-navbar) + 3.2rem) 10.4rem 0 10.4rem;
+    padding-top: calc(var(--height-navbar) + 3.2rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,7 @@ body {
 .nav-bar, .nav-bar nav,
 .nav-bar .user,
 .nav-links, .nav-links li, .nav-links a,
+main,
 .search-box .locate, .search-box .btn-search,
 .searchbox-controls .controls,
 .searchbox-controls .display-mode,
@@ -132,10 +133,17 @@ body {
 
 /* ===== MAIN =============== */
 main {
-    /* border: 1px solid red; */
+    border: 1px solid red;
 
-    width: max-content; /* NÃO está flexível */
-    /* max-width: 123.2rem; */
+    width: 100%;
+    padding-inline: 10.4rem;
+    justify-content: center;
+}
+
+.main-container {
+    border: 1px solid red;
+
+    max-width: 123.2rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
