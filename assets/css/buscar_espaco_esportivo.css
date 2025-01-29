@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    padding-top: calc(var(--height-navbar) + 3.2rem);
+    padding-top: calc(var(--height-navbar) + 4.8rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -377,25 +377,29 @@ main {
 /* ===== FOOTER =============== */
 footer {
     width: 100%;
+    margin-top: 4.8rem;
     padding: 4.8rem 10.4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: var(--Paper);
+    box-shadow: 0 -.6rem 1.2rem rgba(65, 61, 73, .25);
 }
 
-footer .right, footer .social-media {
+footer .logo-rights, footer .social-media {
+    border: 1px solid blue;
+
     display: flex;
     width: fit-content;
 }
 
-footer .right {
+footer .logo-rights {
     flex-direction: column;
     gap: 2.4rem;
 }
 
-footer .right .rights {
+footer .logo-rights .rights {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
