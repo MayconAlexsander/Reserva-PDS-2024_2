@@ -375,12 +375,11 @@ main {
 }
 
 /* ===== FOOTER =============== */
-footer {
+.footer {
     width: 100%;
     margin-top: 4.8rem;
     padding: 4.8rem 10.4rem;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: var(--Paper);
@@ -388,10 +387,7 @@ footer {
 }
 
 footer .logo-rights, footer .social-media {
-    border: 1px solid blue;
-
     display: flex;
-    width: fit-content;
 }
 
 footer .logo-rights {
